@@ -32,33 +32,33 @@ def getArgs():
     global parser
     args = parser.parse_args()
     global IMAGE
-    global WIDTH
-    global HEIGHT
-    global OUTPUT
+    global IMAGE_WIDTH
+    global IMAGE_HEIGHT
+    global OUTPUT_FILE
     IMAGE = args.file
-    WIDTH = args.width
-    HEIGHT = args.height
-    OUTPUT = args.output
+    IMAGE_WIDTH = args.width
+    IMAGE_HEIGHT = args.height
+    OUTPUT_FILE = args.output
 
 if __name__ == "__main__":
     setParser()
     getArgs()
     image = Image.open(IMAGE)
-    if WIDTH == -1 or HEIGHT == -1:
-        WIDTH = int(image.width * 1.25)
-        HEIGHT = image.height
-    image = image.resize((WIDTH, HEIGHT), Image.NEAREST)
+    if IMAGE_WIDTH == -1 or IMAGE_HEIGHT == -1:
+        IMAGE_WIDTH = int(image.width * 1.25)
+        IMAGE_HEIGHT = image.height
+    image = image.resize((IMAGE_WIDTH, IMAGE_HEIGHT), Image.NEAREST)
 
     text = ""
-    for i in range(HEIGHT):
-        for j in range(WIDTH):
+    for i in range(IMAGE_HEIGHT):
+        for j in range(IMAGE_WIDTH):
             text += getChar(*image.getpixel((j,i)))
         text += '\n'
 
     print text
-    if OUTPUT:
-        with open(OUTPUT, 'w') as f:
+    if OUTPUT_FILE:
+        with open(OUTPUT_FILE, 'w') as f:
             f.write(text)
     else:
-        with open("data/ImageOutput.txt", "w") as f:
+        with open("output/ImageOutput.txt", "w") as f:
             f.write(text)
