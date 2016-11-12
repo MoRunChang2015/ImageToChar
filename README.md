@@ -28,7 +28,7 @@ python src/ImageToChar.py <PATH_TO_IMAGE>
 python src/ImageToChar.py images/ascii_dora.png --width 80 --height 60
 ```
 **output**
-
+![output](https://github.com/MoRunChang2015/ImageToChar/blob/master/data/example.png)
 
 ### Reference
 + [Python 图片转字符画](https://www.shiyanlou.com/courses/370/labs/1191/document)
