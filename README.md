@@ -7,18 +7,22 @@ Transform a image into char text using PIL
 
 
 ### Usage
-1. Install **environment**
++ Install **environment**
+
 ```
 sudo apt-get install libtiff5-dev libjpeg8-dev zlib1g-dev
 sudo apt-get libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk
 sudo pip install pillow
 ```
-2. Show help message
+
++ Show help message
+
 ```
 python src/ImageToChar.py -h
 ```
 
-3. Transform a image
++ Transform a image
+
 ```
 python src/ImageToChar.py <PATH_TO_IMAGE>
 ```
