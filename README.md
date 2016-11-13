@@ -31,6 +31,12 @@ python src/ImageToChar.py <PATH_TO_IMAGE>
 ```
 python src/ImageToChar.py images/ascii_dora.png --width 80 --height 60
 ```
+
+**origin**
+
+![origin](https://github.com/MoRunChang2015/ImageToChar/blob/master/images/ascii_dora.png)
+
+
 **output**
 
 ![output](https://github.com/MoRunChang2015/ImageToChar/blob/master/data/example.png)
