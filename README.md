@@ -7,21 +7,28 @@ Transform a image into char text using PIL
 
 
 ### Usage
-1. Install **environment**
++ Install **environment**
+
 ```
 sudo apt-get install libtiff5-dev libjpeg8-dev zlib1g-dev
 sudo apt-get libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk
 sudo pip install pillow
 sudo pip install docopt
 ```
+<<<<<<< HEAD
 2. Show help message
 
 + normal char
+=======
+
++ Show help message
+>>>>>>> 407085589febe4a529550fe587fc9967a8fb36b2
 
 ```
 python src/ImageToChar.py -h
 ```
 
+<<<<<<< HEAD
 + colored char
 
 ```
@@ -38,9 +45,9 @@ python src/ImageToChar.py <PATH_TO_IMAGE>
 
 + colored char
 
-'''
+```
 python src/ImageToColoredChar.py <PATH_TO_IMAGE> -c [ --hide ] [ -b ] [ --contrast=<factor> ]
-'''
+```
 
 ### Example
 
@@ -48,6 +55,12 @@ python src/ImageToColoredChar.py <PATH_TO_IMAGE> -c [ --hide ] [ -b ] [ --contra
 python src/ImageToChar.py images/ascii_dora.png --width 80 --height 60
 ```
 
+**origin**
+
+![origin](https://github.com/MoRunChang2015/ImageToChar/blob/master/images/ascii_dora.png)
+
+
+>>>>>>> 407085589febe4a529550fe587fc9967a8fb36b2
 **output**
 
 ![output](https://github.com/MoRunChang2015/ImageToChar/blob/master/data/example.png)
