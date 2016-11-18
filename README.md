@@ -15,20 +15,15 @@ sudo apt-get libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev pyth
 sudo pip install pillow
 sudo pip install docopt
 ```
-<<<<<<< HEAD
+
 2. Show help message
 
 + normal char
-=======
-
-+ Show help message
->>>>>>> 407085589febe4a529550fe587fc9967a8fb36b2
 
 ```
 python src/ImageToChar.py -h
 ```
 
-<<<<<<< HEAD
 + colored char
 
 ```
