@@ -9,42 +9,44 @@ Transform a image into char text using PIL
 ### Usage
 + Install **environment**
 
-```
-sudo apt-get install libtiff5-dev libjpeg8-dev zlib1g-dev
-sudo apt-get libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk
-sudo pip install pillow
-sudo pip install docopt
-```
+> ```
+> sudo apt-get install libtiff5-dev libjpeg8-dev zlib1g-dev
+> sudo apt-get libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev > tk8.6-dev python-tk
+> sudo pip install pillow
+> sudo pip install docopt
+> ```
 
-2. Show help message
++ Show help message
 
-+ normal char
+> + normal char
 
-```
-python src/ImageToChar.py -h
-```
+> ```
+> python src/ImageToChar.py -h
+> ```
 
-+ colored char
+> + colored char
 
-```
-python src/ImageToColoredChar.py -h
-```
+> ```
+> python src/ImageToColoredChar.py -h
+> ```
 
-3. Transform a image
++ Transform a image
 
-+ normal char
+> + normal char
 
-```
-python src/ImageToChar.py <PATH_TO_IMAGE>
-```
+> ```
+> python src/ImageToChar.py <PATH_TO_IMAGE>
+> ```
 
-+ colored char
+> + colored char
 
-```
-python src/ImageToColoredChar.py <PATH_TO_IMAGE> -c [ --hide ] [ -b ] [ --contrast=<factor> ]
-```
+> ```
+> python src/ImageToColoredChar.py <PATH_TO_IMAGE> -c [ --hide ] [ -b ] [ --contrast=<factor> ]
+> ```
 
 ### Example
+
++ normal char
 
 ```
 python src/ImageToChar.py images/ascii_dora.png --width 80 --height 60
@@ -55,10 +57,12 @@ python src/ImageToChar.py images/ascii_dora.png --width 80 --height 60
 ![origin](https://github.com/MoRunChang2015/ImageToChar/blob/master/images/ascii_dora.png)
 
 
->>>>>>> 407085589febe4a529550fe587fc9967a8fb36b2
 **output**
 
 ![output](https://github.com/MoRunChang2015/ImageToChar/blob/master/data/example.png)
+
+
++ colored char
 
 ```
 python src/ImageToColoredChar.py images/nyan.png --contrast=2.0 -c --hide
